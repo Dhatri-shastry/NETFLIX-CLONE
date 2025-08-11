@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("assets/images/netflix background image.jpg") center center / cover no-repeat;
+}
+
+/* Overlay layer (opacity only affects background, not content) */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+/* Navigation bar */
+nav {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+nav img {
+    width: 140px;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.language {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.language option {
+    color: black;
+}
+
+.right-nav button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px 17px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hero content */
+.hero {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    padding: 0 30px;
+    color: white;
+}
+
+.hero> :nth-child(1),
+.hero> :nth-child(2) {
+    font-size: 56px;
+    font-weight: bolder;
+    line-height: 60px;
+}
+
+.hero> :nth-child(3),
+.hero> :nth-child(4) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.cta {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.email-input {
+    font-size: 18px;
+    padding: 12px 16px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.get-started-btn {
+    font-size: 18px;
+    padding: 12px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
