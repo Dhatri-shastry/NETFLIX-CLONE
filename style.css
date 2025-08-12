@@ -130,3 +130,65 @@ nav img {
     cursor: pointer;
 }
 
+
+
+.trending-section {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-bottom: 3.5rem;
+    box-sizing: border-box;
+    width: 70%;           
+    max-width: 1700px;   
+    margin: 0 auto;      
+}
+
+.trending-section h2 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
+
+.scroll-container {
+    display: flex;
+    gap: 45px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.movie {
+    position: relative;
+    flex: 0 0 auto;
+    width: 170px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.movie img:hover {
+    transform: scale(1.05);
+}
+
+.rank {
+    position: absolute;
+    font-size: 5.5rem;
+    bottom: 10px;
+    left: 5px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 5px black;
+    -webkit-text-stroke: 2px white;
+}
